@@ -1,0 +1,14 @@
+<div id="navbar-container" onmouseover="navReveal()" onmouseout="navHide()">
+  <div class="hide-medium" id="navbar">
+    <%= link_to "Home", root_path, id: 'navbar-home' %>
+    <%= link_to "Donate", "#", class:"navbar-tab navbar-highlight" %>
+  </div>
+</div>
+<div class="navbar-spacer"></div>
+<div class="show-medium" id="navbar-show" onclick="navRevealMobile()"></div>
+<div class="show-medium" id="navbar-outside" onclick="navHideMobile()"></div>
+<div class="show-medium" id="navbar-menu">
+  <%= link_to "Home", root_path, id: 'navbar-home' %>
+  <%= link_to "Donate", "#", class:"navbar-tab navbar-highlight" %>
+</div>
+

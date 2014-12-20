@@ -1,0 +1,227 @@
+@import "variables.css.scss";
+
+/* Resets the shitty beginning margins and makes $black our main color */
+body {
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+
+/* Resets the shitty beginning settings for various text tags and makes $black the main color */
+h1, h2, h3, h4, h5, h6, p, a, input, button {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: none;
+  color: $black;
+}
+
+/* box-sizing: border-box is the shit. It makes it so that width and height remain constant even if you add padding and border */
+* {
+  box-sizing: border-box;
+}
+
+.black {
+  color: $black;
+}
+
+.primary-text {
+  color: $primary-color;
+}
+
+.white {
+  color: #fff;
+}
+
+/* removes annoying google highlight */
+*:focus {
+  outline: 0;
+}
+
+/* the main header styling */
+h1 {
+  font: $h1;
+  color: $primary-color;
+}
+
+/* the main subtitle styling */
+h2 {
+  font: $h2;
+  color: $black;
+}
+
+/* the smaller header styling */
+h3 {
+  font: $h1;
+  font-size: 84px;
+  letter-spacing: 3px;
+  line-height: 64px;
+  color: $primary-color;
+}
+
+/* the smaller subtitle styling */
+h4 {
+  font: $h2;
+  font-size: 34px;
+  color: $dark-gray;
+}
+
+/* the main body styling */
+p {
+  font: $p;
+  color: $dark-gray;
+  line-height: 32px;
+}
+
+input, textarea, select {
+  border: 1px solid $light-gray;
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+  color: $black;
+  font: $p;
+  margin: 15px 0 15px;
+}
+
+textarea {
+  height: 300px;
+}
+
+/* various containers */
+.wide-container, .medium-container, .small-container {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+/* use this for banners and screen-wide content */
+.wide-container {
+  width: 100%;
+  overflow: auto;
+}
+
+.medium-container {
+  width: 1000px;
+}
+
+/* use this for body text */
+.small-container {
+ width: 600px;
+}
+
+/* adds a color top border */
+.border-top {
+  border-top: 5px solid $secondary-color;
+}
+
+/* adds a color bottom border */
+.border-bottom {
+  border-bottom: 5px solid $secondary-color;
+}
+
+/* elements with these classes only show on medium or small screens */
+.show-medium, .show-small {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  margin: auto;
+  padding: 20px 35px;
+  font: $h2;
+  font-size: 25px;
+  font-weight: 700;
+  background: $primary-color;
+  margin-top: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  &:hover {
+    background: $secondary-color;
+    cursor: pointer;
+  }
+  // -moz-border-radius:4px;
+  // -webkit-border-radius:4px;
+  // border-radius:4px;
+}
+
+.button a {
+  color: white;
+}
+
+/* use this to add padding to containers */
+.padding {
+  padding: 100px 25px 100px 25px;
+}
+
+.padding-vertical {
+  padding: 100px 0 100px 0;
+}
+
+.margin {
+  margin: 50px 0 50px 0;
+}
+
+.margin-bottom {
+  margin-bottom: 35px;
+}
+
+.general-wrapper {
+  margin-left: auto;
+  margin-right : auto;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  margin-bottom: $footer-margin;
+}
+
+@media (max-width: 1000px) {
+  .medium-container {
+    width: 100%;
+  }
+
+  /* elements with this class hide themselves on medium or smaller screens */
+  .hide-medium {
+    display: none;
+  }
+
+  .show-medium {
+    display: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .padding-center {
+    padding-top: 180px;
+  }
+
+  .small-container {
+    width: 100%;
+  }
+
+  /* elements with this class hide themselves on small screens */
+  .hide-small {
+    display: none;
+  }
+
+  .show-small {
+    display: initial;
+  }
+}

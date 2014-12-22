@@ -173,8 +173,9 @@ textarea {
   margin-right : auto;
   background: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: auto;
+  margin-top: $header-margin;
   margin-bottom: $footer-margin;
 }
 

@@ -1,23 +1,71 @@
 @import "variables.css.scss";
 
+#head-container {
+  margin-left: auto;
+  margin-right : auto;
+  background: #fff;
+  z-index: 0;
+  overflow: auto;
+  margin-bottom: $footer-margin;
+}
+
 #index-image {
   background-image: url(asset_path("main.jpg"));
   background-position: center;
   background-size: cover;
   z-index: 1;
   width: 100%;
-  height: 450px;
+  height: 600px;
 }
 
 #index-black {
   width: 100%;
-  height: 450px;
+  height: 600px;
   z-index: 0;
   background-color: rgba(0,0,0,0.4);
 }
 
+#index-head-content {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
 #index-headline {
-  text-align: center;
-  padding-top: 125px;
+  bottom: 0;
+  left: 0;
+  padding-left: 50px;
+  padding-bottom: 150px;
+  position: absolute;
   font-size: 100px;
 }
+
+/* Main content */
+
+#main-wrapper {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+#main-content-container {
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+}
+
+#about-section-container {
+  width: 100%;
+  height: 200px;
+}
+
+#about-headline {
+  color: black;
+  text-align: center;
+}
+
+

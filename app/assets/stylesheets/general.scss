@@ -1,10 +1,15 @@
 @import "variables.css.scss";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Resets the shitty beginning margins and makes $black our main color */
 body {
   margin: 0;
   padding: 0;
   color: $black;
+  overflow: auto;
 }
 
 /* Resets the shitty beginning settings for various text tags and makes $black the main color */
@@ -175,7 +180,7 @@ textarea {
   position: relative;
   z-index: 0;
   overflow: auto;
-  margin-top: $header-margin;
+  // margin-top: $header-margin;
   margin-bottom: $footer-margin;
 }
 

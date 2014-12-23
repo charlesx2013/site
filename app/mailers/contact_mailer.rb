@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
     @email = email
     @subject = subject
     @message = message
-    1/0
+    mail(to: "charlesx@gmail.com", subject: subject)
   end
 end

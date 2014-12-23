@@ -29,6 +29,21 @@
   text-align: center;
 }
 
+#modal-info-container {
+  margin: 0 auto;
+}
+
 #contact-text-area {
   resize: none;
+}
+
+#modal-email {
+  float: left;
+  width: 49%;
+}
+
+#modal-subject {
+  float: right;
+  width: 49%;
+  margin-left: 20px
 }

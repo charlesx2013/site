@@ -20,7 +20,7 @@ change_static = (head, main, image, screen) ->
     head.css("margin-bottom", margin_bottom)
 
 toggle_modal = (modal) ->
-  modal.toggle()
+  modal.fadeToggle()
 
 ready_index = ->
   if $("#head-container").length > 0
@@ -34,6 +34,7 @@ ready_index = ->
 
     contact = $("#contact-link")
     modal = $("#modal-container")
+    modal_content = $("#modal-content-container")
 
     change_window screen, image, black, container
 
@@ -48,6 +49,13 @@ ready_index = ->
     contact.click (e) ->
       e.preventDefault()
       toggle_modal modal
+
+    modal.click (e) ->
+      e.stopPropagation()
+      modal.fadeToggle()
+
+    modal_content.click (e) ->
+      e.stopPropagation()
 
 
 $(document).ready ready_index

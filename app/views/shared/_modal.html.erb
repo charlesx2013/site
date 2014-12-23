@@ -2,7 +2,7 @@
   <div id="modal-content-container">
     <h1 id="modal-contact-headline">Contact Me!</h1>
     <div id="modal-form-container">
-      <%= form_for contact_static_pages_path, method: "post" do %>
+      <%= form_tag contact_static_pages_path, method: "post" do %>
         <div id="modal-info-container">
           <%= text_field_tag "email", nil, placeholder: "Email", type: "email", required: "required", id: "modal-email" %>
           <%= text_field_tag "subject", nil, placeholder: "Subject", required: "required", id: "modal-subject" %>

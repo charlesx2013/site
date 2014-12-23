@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
-    UserMailer.contact_email(params[:email],
+    ContactMailer.contact_email(params[:email],
                              params[:subject],
                              params[:message]).deliver
     flash[:notice] = "Thanks for sending us an email. We'll get back to you soon!"

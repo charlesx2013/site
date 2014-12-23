@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
   default from: ENV["EMAIL"]
 
-  def contact_email(name, email, subject, message)
+  def contact_email(email, subject, message)
     @email = email
     @subject = subject
     @message = message

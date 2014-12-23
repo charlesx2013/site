@@ -1,11 +1,11 @@
 class ContactMailer < ActionMailer::Base
-  default from: "charlesx@gmail.com"
+  default from: ENV["EMAIL"]
 
   def contact_email(name, email, subject, message)
     @name = name
     @email = email
     @subject = subject
     @message = message
-    mail(to: "charlesx@gmail.com", subject: subject)
+    mail(to: ENV["EMAIL"], subject: subject)
   end
 end

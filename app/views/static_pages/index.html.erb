@@ -4,8 +4,8 @@
       <div id="index-head-content">
         <h1 id="index-headline">Hi, I'm Charles!</h1>
         <div id="index-link-container">
-          <%= link_to "Resume", "https://www.dropbox.com/s/eug1p4pfl3x21ha/resume2.pdf?dl=0", class: "button", id: "resume-link", target: "_blank" %>
-          <%= link_to "Contact Me!", "#", class: "button", id: "contact-link" %>
+          <%= link_to "Resume", "https://www.dropbox.com/s/qrrielnhu0kwkfl/resume3.pdf?dl=0", class: "button", id: "resume-link", target: "_blank" %>
+          <%= link_to "Contact Me!", "#contact", class: "button", id: "contact-link" %>
         </div>
       </div>
     </div>
@@ -21,6 +21,11 @@
         and
           <span id="building-headline"> building</span>.
       </h2>
+      <p id="about-content" class="medium-container">
+        Hey there! I’m currently a <span id="second-span" class="about-span">second year</span> at <span id="ucb-span" class="about-span">UC Berkeley</span> studying <span id="eecs-span" class="about-span">Computer Science and Electrical Engineering.</span> I love simple code and beautiful design. I also enjoy racket sports, board game nights (Resistance preferred), jamming out on the guitar, and playing video games. Right now I’m primarily a <span id="rails-span" class="about-span">Rails programmer</span> dabbling in mobile applications, especially <span id="android-span" class="about-span">Android</span>. I’m currently a developer for <span id="bp-span" class="about-span">Cal Blueprint</span>, as well as a staff member of the <span id="coe-span" class="about-span">Berkeley College of Engineering</span>.
+      </p>
     </div>
   </div>
 </div>
+
+<%= render "shared/modal" %>

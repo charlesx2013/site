@@ -22,9 +22,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -36,6 +33,9 @@ gem 'rails_12factor'
 
 # Store ENV variables
 gem 'figaro', '~> 1.0.0'
+
+# Form
+gem 'simple_form', '~> 3.0.2'
 
 group :development do
   gem 'better_errors', '~> 1.1.0'

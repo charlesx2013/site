@@ -4,6 +4,12 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
 
+  resources :static_pages, only: [] do
+    collection do
+      post :contact, as: "contact"
+    end
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

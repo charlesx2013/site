@@ -4,18 +4,19 @@ change_window = (screen, image, black, container) ->
     image.css("height", h)
     black.css("height", h)
     container.css("height", h)
-    console.log "#{h}"
 
 
 change_static = (head, main, image, screen) ->
   top = screen.scrollTop()
   height = parseInt(image.css("height"))
   margin_bottom = "5000px"
-  if top > height
+  if top > height + 200
     main.css("position", "static")
+    main.css("margin-top", "200px")
     head.css("margin-bottom", "0px")
   else
     main.css("position", "fixed")
+    main.css("margin-top", "0px")
     head.css("margin-bottom", margin_bottom)
 
 ready_index = ->

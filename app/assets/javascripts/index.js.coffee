@@ -19,14 +19,21 @@ change_static = (head, main, image, screen) ->
     main.css("margin-top", "0px")
     head.css("margin-bottom", margin_bottom)
 
+toggle_modal = (modal) ->
+  modal.toggle()
+
 ready_index = ->
   if $("#head-container").length > 0
     screen = $(window)
     image = $("#index-image")
     black = $("#index-black")
+
     container = $("#index-head-content")
     main_wrapper = $("#main-wrapper")
     head_wrapper = $("#head-container")
+
+    contact = $("#contact-link")
+    modal = $("#modal-container")
 
     change_window screen, image, black, container
 
@@ -38,6 +45,9 @@ ready_index = ->
     screen.scroll ->
       change_static head_wrapper, main_wrapper, image, screen
 
+    contact.click (e) ->
+      e.preventDefault()
+      toggle_modal modal
 
 
 $(document).ready ready_index

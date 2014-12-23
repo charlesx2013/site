@@ -33,3 +33,10 @@ gem 'spring',        group: :development
 
 # For heroku!
 gem 'rails_12factor'
+
+group :development do
+  gem 'better_errors', '~> 1.1.0'
+  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'annotate', '~> 2.6.1'
+  gem 'spring'
+end

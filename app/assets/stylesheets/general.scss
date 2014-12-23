@@ -130,17 +130,16 @@ textarea {
 .button {
   display: inline-block;
   margin: auto;
-  padding: 20px 35px;
+  padding: 30px 60px;
   font: $h2;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 700;
-  background: $primary-color;
   margin-top: 15px;
   color: #fff;
-  border: none;
-  border-radius: 6px;
+  border: 5px solid #fff;
+  border-radius: 10px;
   &:hover {
-    background: $secondary-color;
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
   // -moz-border-radius:4px;

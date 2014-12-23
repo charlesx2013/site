@@ -1,6 +1,6 @@
 change_window = (screen, image, black, container) ->
   h = screen.height()
-  if h > 300
+  if h > 500
     image.css("height", h)
     black.css("height", h)
     container.css("height", h)
@@ -10,9 +10,9 @@ change_static = (head, main, image, screen) ->
   top = screen.scrollTop()
   height = parseInt(image.css("height"))
   margin_bottom = "5000px"
-  if top > height + 200
+  if top > height + 500
     main.css("position", "static")
-    main.css("margin-top", "200px")
+    main.css("margin-top", "500px")
     head.css("margin-bottom", "0px")
   else
     main.css("position", "fixed")

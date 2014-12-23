@@ -1,10 +1,11 @@
 <div id="head-container">
-  <%= render "shared/header" %>
   <div id="index-image">
     <div id="index-black">
       <div id="index-head-content">
         <h1 id="index-headline">Hi, I'm Charles!</h1>
         <div id="index-link-container">
+          <%= link_to "Resume", "https://www.dropbox.com/s/eug1p4pfl3x21ha/resume2.pdf?dl=0", class: "button", id: "resume-link", target: "_blank" %>
+          <%= link_to "Contact Me!", "#", class: "button", id: "contact-link" %>
         </div>
       </div>
     </div>
@@ -14,7 +15,12 @@
 <div id="main-wrapper">
   <div id="main-content-container">
     <div id="about-section-container">
-      <h1 id="about-headline">About Me</h1>
+      <h2 id="about-headline">
+        Constantly
+          <span id="learning-headline">learning</span>
+        and
+          <span id="building-headline"> building</span>.
+      </h2>
     </div>
   </div>
 </div>

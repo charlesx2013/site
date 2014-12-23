@@ -88,7 +88,7 @@ input, textarea, select {
 }
 
 textarea {
-  height: 300px;
+  height: 150px;
 }
 
 /* various containers */
@@ -105,7 +105,7 @@ textarea {
 }
 
 .medium-container {
-  width: 1250px;
+  width: 1000px;
 }
 
 /* use this for body text */
@@ -131,9 +131,9 @@ textarea {
 .button-class {
   display: inline-block;
   margin: auto;
-  padding: 30px 60px;
+  padding: 20px 50px;
   font: $h2;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   margin-top: 15px;
   border-radius: 10px;

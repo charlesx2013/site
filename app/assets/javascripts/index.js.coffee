@@ -1,6 +1,6 @@
 change_window = (screen, image, black, container) ->
   h = screen.height()
-  if h > 500
+  if h > 400
     image.css("height", h)
     black.css("height", h)
     container.css("height", h)

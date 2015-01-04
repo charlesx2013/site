@@ -48,7 +48,8 @@ ready_index = ->
 
     contact.click (e) ->
       e.preventDefault()
-      toggle_modal modal
+      # toggle_modal modal
+      smoothScroll("contact-section-container")
 
     modal.click (e) ->
       e.stopPropagation()

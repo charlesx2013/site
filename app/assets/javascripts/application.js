@@ -16,5 +16,5 @@
 //= require_tree .
 
 function smoothScroll(section) {
-  $('html, body').animate({scrollTop: $('#' + section).offset().top + 18}, 1000);
+  $('html, body').animate({scrollTop: $('#' + section).offset().top + $(window).height() + 500 }, 1000);
 }

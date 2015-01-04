@@ -1,8 +1,24 @@
 @import "variables.css.scss";
 
+/* General things */
+
+.headline {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.section {
+  padding: $section-padding 0px;
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* Main Content */
 
 #head-container {
   margin-left: auto;
@@ -45,7 +61,7 @@
 #index-headline {
   @extend #index-content;
   padding-bottom: 190px;
-  font-size: 100px;
+  font-size: 75px;
 }
 
 #index-link-container {
@@ -73,7 +89,7 @@
   height: 100%;
   overflow: hidden;
   padding-top: 100px;
-  background-color: #293E6A;
+  background-color: #1D2F3E;
 }
 
 #main-content-container {
@@ -83,13 +99,7 @@
 
 #about-section-container {
   width: 100%;
-}
-
-#about-headline {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 300;
+  padding-bottom: $section-padding;
 }
 
 #learning-headline {
@@ -117,3 +127,15 @@
 #android-span { color: #b2fb49; }
 #bp-span { color: #1261B2; }
 #coe-span { color: #00b2a5; }
+
+/* Projects section */
+
+#project-section-container {
+  background-color: #0FB493;
+}
+
+/* Contact Section */
+
+#contact-section-container {
+  background-color: #C9E1C1;
+}

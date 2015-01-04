@@ -47,7 +47,7 @@ ready_index = ->
       change_static head_wrapper, main_wrapper, image, screen
 
     contact.click (e) ->
-      e.preventDefault()
+      # e.preventDefault()
       # toggle_modal modal
       smoothScroll("contact-section-container")
 

@@ -17,16 +17,16 @@
   transition: 0.5s;
 }
 
-// #navbar-show {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   width: 60px;
-//   height: 60px;
-//   z-index: 69;
-//   background: url(asset_path("menu.svg"));
-//   background-size: cover;
-// }
+#navbar-show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 102;
+  background: url(asset_path("menu.svg"));
+  background-size: cover;
+}
 
 .navbar-spacer {
   width: 100%;
@@ -89,7 +89,7 @@
 
 #navbar-outside {
   position: fixed;
-  z-index: 69;
+  z-index: 101;
   top: 0;
   left: -100%;
   width: 100%;

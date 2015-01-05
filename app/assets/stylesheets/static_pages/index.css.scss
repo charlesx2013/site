@@ -10,7 +10,7 @@
 }
 
 .section {
-  padding: $section-padding 0px;
+  padding: $section-padding 10px;
   width: 100%;
 }
 
@@ -106,6 +106,8 @@
 
 #about-section-container {
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: $section-padding;
 }
 

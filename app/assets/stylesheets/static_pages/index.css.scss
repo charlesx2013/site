@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Main Content */
@@ -97,6 +97,13 @@
   height: $footer-margin;
 }
 
+/* About section */
+
+#black-headline {
+  color: black;
+  line-height: 75px;
+}
+
 #about-section-container {
   width: 100%;
   padding-bottom: $section-padding;
@@ -115,16 +122,17 @@
 #about-content {
   margin-top: 20px;
   line-height: 40px;
+  font-weight: 300;
   color: black;
 }
 
-.about-span { font-weight: 300; }
+.about-span { font-weight: 400; }
 
 #second-span { color: #4086AA; }
-#ucb-span { color: #FFCC00; }
-#eecs-span { color: #91C3DC; }
-#rails-span { color: #da5067; }
-#android-span { color: #b2fb49; }
+#ucb-span { color: #FDB515; }
+#eecs-span { color: #003A70; }
+#rails-span { color: #A2192B; }
+#android-span { color: #228B22; }
 #bp-span { color: #1261B2; }
 #coe-span { color: #00b2a5; }
 

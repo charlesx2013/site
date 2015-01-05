@@ -12,11 +12,13 @@ change_static = (head, main, image, screen) ->
   margin_bottom = "5000px"
   if top > height + 500
     main.css("position", "static")
-    main.css("margin-top", "500px")
+    if $(window).width() > 600
+      main.css("margin-top", "500px")
     head.css("margin-bottom", "0px")
   else
     main.css("position", "fixed")
-    main.css("margin-top", "0px")
+    if $(window).width() > 600
+      main.css("margin-top", "0px")
     head.css("margin-bottom", margin_bottom)
 
 toggle_modal = (modal) ->

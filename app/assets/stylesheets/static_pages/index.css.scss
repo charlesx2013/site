@@ -15,9 +15,9 @@
   width: 100%;
 }
 
-// ::-webkit-scrollbar {
-//   display: none;
-// }
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* Main Content */
 
@@ -142,6 +142,22 @@
 
 #project-section-container {
   background-color: #3E8C84;
+}
+
+#project-section-project-container {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: blue;
+}
+
+.project-container {
+  width: 31%;
+  height: 100%;
+  margin: 0px 1.1%;
+  background-color: red;
+  float: left;
 }
 
 /* Contact Section */

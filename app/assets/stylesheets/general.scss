@@ -145,17 +145,6 @@ textarea {
   }
 }
 
-.inverted-button {
-  @extend .button-class;
-  border: 5px solid #000;
-  background-color: #000;
-  &:hover {
-    // background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-}
-
-
 .button a {
   color: white;
 }

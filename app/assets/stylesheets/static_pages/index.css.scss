@@ -6,6 +6,7 @@
   color: white;
   text-align: center;
   font-size: 60px;
+  line-height: 75px;
   font-weight: 300;
 }
 
@@ -101,7 +102,6 @@
 
 #black-headline {
   color: black;
-  line-height: 75px;
 }
 
 #about-section-container {
@@ -148,4 +148,17 @@
 
 #contact-section-container {
   background-color: #296B73;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 600px) {
+  #contact-link {
+    margin-left: 10px;
+  }
+
+  .button {
+    padding: 20px 30px;
+  }
 }

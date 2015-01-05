@@ -170,12 +170,21 @@
 }
 
 @media (max-width: 600px) {
+
+  #index-headline {
+    padding-left: 20px;
+  }
+
+  #index-link-container {
+    padding-left: 20px;
+  }
+
   #contact-link {
     margin-left: 10px;
   }
 
   .button {
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 
   #about-content {

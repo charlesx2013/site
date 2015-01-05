@@ -38,8 +38,8 @@ ready_index = ->
 
     change_window screen, image, black, container
 
-    screen.resize ->
-      change_window screen, image, black, container
+    # screen.resize ->
+    #   change_window screen, image, black, container
 
     change_static head_wrapper, main_wrapper, image, screen
 

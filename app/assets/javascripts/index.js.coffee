@@ -9,15 +9,17 @@ change_window = (screen, image, black, container) ->
 change_static = (head, main, image, screen) ->
   top = screen.scrollTop()
   height = parseInt(image.css("height"))
-  margin_bottom = "5000px"
-  if top > height + 500
+  margin_bottom = "2000px"
+  isMobile = $(window).width() < 600
+  mobile = if isMobile then height else (height + 500)
+  if top > mobile
     main.css("position", "static")
-    if $(window).width() > 600
+    if not isMobile
       main.css("margin-top", "500px")
     head.css("margin-bottom", "0px")
   else
     main.css("position", "fixed")
-    if $(window).width() > 600
+    if not isMobile
       main.css("margin-top", "0px")
     head.css("margin-bottom", margin_bottom)
 
